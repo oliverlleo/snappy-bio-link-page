@@ -132,7 +132,7 @@ const Index = () => {
                 </div>
               </div>
               <Button
-                onClick={() => window.open('https://g.co/kgs/v2jCMzv', '_blank')}
+                onClick={() => window.open('https://maps.app.goo.gl/uyjtQ1cyaceCefSs9', '_blank')}
                 className="w-full mt-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
               >
                 Abrir no Google Maps
