@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { MessageCircle, MapPin, Instagram, Facebook, Globe, Mail, Phone, X } from 'lucide-react';
+import { MessageCircle, MapPin, Instagram, Globe } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
@@ -37,22 +37,8 @@ const Index = () => {
       name: "Instagram",
       icon: Instagram,
       color: "from-pink-500 to-purple-600",
-      action: () => window.open('https://instagram.com', '_blank'),
+      action: () => window.open('https://www.instagram.com/fascinioedesejo?igsh=MXFzYXN4aXE1anQ5ag==', '_blank'),
       description: "Siga-nos no Instagram"
-    },
-    {
-      name: "Site Oficial",
-      icon: Globe,
-      color: "from-blue-500 to-blue-600",
-      action: () => window.open('https://exemplo.com', '_blank'),
-      description: "Visite nosso site"
-    },
-    {
-      name: "Email",
-      icon: Mail,
-      color: "from-indigo-500 to-indigo-600",
-      action: () => window.open('mailto:contato@exemplo.com', '_blank'),
-      description: "Envie um email"
     }
   ];
 
@@ -65,12 +51,8 @@ const Index = () => {
             <div className="glass-effect rounded-full p-6 pulse-glow">
               <img 
                 src="/logo.png" 
-                alt="Logo" 
+                alt="Fascinio & Desejo Logo" 
                 className="w-24 h-24 rounded-full mx-auto object-cover"
-                onError={(e) => {
-                  // Fallback para quando a logo não existir
-                  e.currentTarget.src = "data:image/svg+xml,%3Csvg width='96' height='96' viewBox='0 0 96 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='96' height='96' rx='48' fill='url(%23gradient)'/%3E%3Ctext x='48' y='60' text-anchor='middle' fill='white' font-size='36' font-weight='bold'%3EL%3C/text%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0' y1='0' x2='96' y2='96'%3E%3Cstop stop-color='%23667eea'/%3E%3Cstop offset='1' stop-color='%23764ba2'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E";
-                }}
               />
             </div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-green-400 to-green-500 rounded-full border-4 border-white flex items-center justify-center">
@@ -79,7 +61,7 @@ const Index = () => {
           </div>
           
           <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-2">
-            Minha Loja
+            Fascinio & Desejo
           </h1>
           <p className="text-gray-600 text-lg font-medium">
             Todos os nossos links em um só lugar ✨
@@ -117,11 +99,6 @@ const Index = () => {
         {/* Footer */}
         <div className="text-center text-gray-500 text-sm">
           <p className="mb-2">💜 Criado com amor</p>
-          <div className="flex justify-center space-x-4">
-            <Phone size={16} />
-            <Mail size={16} />
-            <MessageCircle size={16} />
-          </div>
         </div>
       </div>
 
@@ -136,7 +113,7 @@ const Index = () => {
           <div className="flex-1 p-6 pt-2">
             <div className="w-full h-full min-h-[500px] rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.143!2d-46.645!3d-23.561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQwLjAiUyA0NsKwMzgnNDIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.143!2d-47.745!3d-23.461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzQwLjAiUyA0N8KwNDQnNDIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -150,8 +127,8 @@ const Index = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="text-red-500" size={20} />
                 <div>
-                  <p className="font-semibold text-gray-800">Endereço da Loja</p>
-                  <p className="text-gray-600">Clique no link abaixo para abrir no Google Maps</p>
+                  <p className="font-semibold text-gray-800">R. Cel. Guilherme Francisco Wincler, 54</p>
+                  <p className="text-gray-600">Centro, Capela do Alto - SP, 18195-000</p>
                 </div>
               </div>
               <Button
