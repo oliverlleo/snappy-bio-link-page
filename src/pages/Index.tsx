@@ -104,16 +104,16 @@ const Index = () => {
 
       {/* Modal do Mapa */}
       <Dialog open={isMapModalOpen} onOpenChange={setIsMapModalOpen}>
-        <DialogContent className="max-w-4xl w-full h-[80vh] p-0">
+        <DialogContent className="max-w-2xl w-full max-h-[80vh] p-0">
           <DialogHeader className="p-6 pb-2">
             <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               Nossa Localização
             </DialogTitle>
           </DialogHeader>
           <div className="flex-1 p-6 pt-2">
-            <div className="w-full h-full min-h-[500px] rounded-lg overflow-hidden shadow-lg">
+            <div className="w-full h-80 rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.143!2d-47.745!3d-23.461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzQwLjAiUyA0N8KwNDQnNDIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.143!2d-47.745!3d-23.461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5ae6b8f8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sR.%20Cel.%20Guilherme%20Francisco%20Wincler%2C%2054%20-%20Centro%2C%20Capela%20do%20Alto%20-%20SP%2C%2018195-000!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
